@@ -4,32 +4,158 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Admin-dashboard</title>
 </head>
 <body>
    <aside class="aside">
-    <divc class="logo-container">
-        <img src="#null" alt="logo">
-        <Span>Dashboard</Span>
-    </div>
-    <nav>
-        <div><img src="#null" alt="home button"><span>Home</span></div>
-        <div><img src="#null" alt="Profile button"><span>Profile</span></div>
-        <div><img src="#null" alt="Messages Button"><span>Messages</span></div>
-        <div><img src="#null" alt=""><span>History</span></div>
-        <div><img src="#null" alt=""><span>Task</span></div>
-        <div><img src="#null" alt=""><span>Communities</span></div>
-    </nav>
-    <div class="settings-container">
-        <div><img src="#null" alt=""><span>Home</span></div>
-        <div><img src="#null" alt=""><span>Profile</span></div>
-        <div><img src="#null" alt=""><span>Messages</span></div>
-    </div>
+        <div class="logo-container">
+            <img src="#null" alt="logo">
+            <span class="dashboard-logo-text">Dashboard</span>
+        </div>
+        <nav class="nav-container">
+            <div><img class="nav-icon" src="icons/home.svg" alt="home button"><span class="nav-item">Home</span></div>
+            <div><img class="nav-icon" src="icons/card-account-details-outline.svg" alt="Profile button"><span class="nav-item">Profile</span></div>
+            <div><img class="nav-icon" src="#null" alt="Messages Button"><span class="nav-item">Messages</span></div>
+            <div><img class="nav-icon" src="#null" alt="History Button"><span class="nav-item">History</span></div>
+            <div><img class="nav-icon" src="#null" alt="task button"><span class="nav-item">Task</span></div>
+            <div><img src="#null" alt="Communities button"><span class="nav-item">Communities</span></div>
+        </nav>
+        <div class="settings-container">
+            <div><img class="nav-icon" src="#null" alt="Home button"><span class="nav-item">Home</span></div>
+            <div><img class="nav-icon" src="#null" alt="Profile button"><span class="nav-item">Profile</span></div>
+            <div><img class="nav-icon" src="#null" alt="Messages button"><span class="nav-item">Messages</span></div>
+        </div>
    </aside>
    <header class="header">
-
+        <div class="search-container">
+            <img src="null" alt="search glass icon">
+            <input type="text">
+         </div>
+        <div class="user-profile-container">
+            <img src="#null" alt="notifcations icon" class="notfication-icon">
+            <img src="#null" alt="user profile icon" class="user-profile-pic-small">
+            <span class="username">Bobby Joe</span>
+         </div>
+        <div class="user-welcome-container">
+            <img src="#null" alt="user profile icon larger" class="user-profile-pic">
+            <div class="username-welcome">
+                <span class="user-welcome">Hi there,</span>
+                <span class="username-large">Bobby Joe (@Bobby)</span>
+            </div>
+         </div>
+        <div class="header-buttons-container">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
    </header>
-   <section class="card-container"></section>
+   <section class="card-container">
+        <div class="projects-container">
+            <span id="your-project" class="section-titles">Your Projects</span>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                <div class="icon-container">
+                        <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/call-split.svg" alt="">
+                 </div>
+            </div>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                <div class="icon-container">
+                    <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                    <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                    <img class="icons" src="icons/call-split.svg" alt="">
+                </div>
+            </div>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                <div class="icon-container">
+                        <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/call-split.svg" alt="">
+                </div>
+            </div>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                <div class="icon-container">
+                        <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/call-split.svg" alt="">
+                </div>
+            </div>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                <div class="icon-container">
+                        <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/call-split.svg" alt="">
+                </div>
+            </div>
+            <div class="project-card">
+                <span>Super Cool Project</span>
+                <P>Sed tempus ut lacus ut scelerisque.
+                    Suspendisse sollicitudin nibh erat, id
+                    facilisis felis accumsan nec.</P>
+                    <div class="icon-container">
+                        <img class="icons" src="icons/star-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/eye-plus-outline.svg" alt="">
+                        <img class="icons" src="icons/call-split.svg" alt="">
+                    </div>
+            </div>
+        </div>
+        <div class="announcements-container">
+            <span class="section-titles">Announcements</span>
+            <div class="announcements-card">
+                <section>
+                    <span>Site Maintenance</span>
+                    <p>Vestibulum condimentum tells lacus,
+                        in accumsan elit maximus ac. Donec
+                        hendrerit sodales congue...</p>
+                </section>
+                <section>
+                    <span>Site Maintenance</span>
+                    <p>Vestibulum condimentum tells lacus,
+                        in accumsan elit maximus ac. Donec
+                        hendrerit sodales congue...</p>
+                </section>
+                <section>
+                    <span>Site Maintenance</span>
+                    <p>Vestibulum condimentum tells lacus,
+                        in accumsan elit maximus ac. Donec
+                        hendrerit sodales congue...</p>
+                </section>
+            </div>
+        </div>
+        <div class="trending-container">
+            <span class="section-titles">Trending</span>
+            <div class="trending-card">
+                <div class="trending-user"> 
+                    <img src="" alt="">
+                    <span>@username</span>
+                    <span>world peace maker</span>
+                </div>
+            </div>
+        </div>
+   </section>
 </body>
 </html>
