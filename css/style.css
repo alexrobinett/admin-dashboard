@@ -1,7 +1,7 @@
 :root{
     box-sizing: border-box;
     font-size: 16px;
-    --primarycolor: rgb(57, 143, 193);
+    --primarycolor: rgb(89, 57, 193);
     --secondcolor:  rgb(249, 249, 249);
     --accentcolor: rgb(239, 205, 35);
 }
@@ -14,7 +14,7 @@
 body{
     display: grid;
     grid-template-columns: 1.2fr 5fr;
-    grid-template-rows: 2fr 8fr;
+    grid-template-rows: 15% 85%;
     margin: 0;
 }
 
@@ -26,6 +26,7 @@ aside{
     display: grid;
     grid-template-rows: 10% 30% 1fr;
     grid-template-columns: 1fr;
+    z-index: 3;
 }
 
 .icon-large{
@@ -37,7 +38,7 @@ aside{
 header{
     background-color: var(--secondcolor);
     grid-column: 2/3;
-    box-shadow: 5px 2px 2px rgb(123, 123, 123);
+    box-shadow: 2px 2px 5px 1px rgb(155, 155, 155);
 }
 
 .card-container{
@@ -50,6 +51,7 @@ header{
     margin: 5% 0% 0% 10%;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    margin-top: 20px;
 }
 
 .logo-container{
@@ -83,13 +85,15 @@ nav>div{
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .3fr 2fr 2fr 2fr;
+    grid-template-rows: 1% 1fr 1fr 1fr;
     gap: 40px;
     margin: 40px;
 }
 
 #your-project{
     grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0px;
 }
 
 
@@ -98,7 +102,7 @@ nav>div{
 .project-card{
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 2px 2px rgb(185, 185, 185), inset 10px 0px var(--accentcolor);;
+    box-shadow: 2px 2px 2px 1px rgb(185, 185, 185), inset 10px 0px var(--accentcolor);;
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -136,7 +140,7 @@ nav>div{
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 4fr 6fr;
     align-items: center;
-    padding: 30px;
+    z-index: 2;
 }
 
 .search-container{
@@ -278,27 +282,74 @@ button{
 
 .trending-container{
     display: grid;
-    margin: 20px;
-    grid-template-rows: 5% 1fr;
+    margin: 0px 40px 40px 0px;
+   grid-template-rows: 30px 1fr;
 }
 
 .trending-card{
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 2px 2px rgb(185, 185, 185)
+    box-shadow: 2px 2px 2px 1px rgb(185, 185, 185);
+    display: grid;
+    align-items: center;
 }
 
+.user-update{
+    display: flex;
+    flex-direction: column;
+}
 
 /*  Announcements Styling */
+.section-titles{
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "roboto",sans-serif;
+    color: rgb(25, 25, 25);
+    
+}
 
 .announcements-container{
     display: grid;
-    margin: 20px;
-    grid-template-rows: 5% 1fr;
+    margin: 40px 40px 40px 0px;
+    grid-template-rows: 30px 1fr;
 }
 
 .announcements-card{
+    grid-row: 2/3;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 2px 2px rgb(185, 185, 185)
+    box-shadow: 2px 2px 2px 1px rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
 }
+
+.announcements{
+    margin: 30px 30px 0px 30px;
+}
+
+.announcements:nth-child(2){
+    margin: 0x 30px 0px 30px;
+    border-top: 1px solid gray;
+    padding: 30px 0px 0px;
+}
+.announcements:nth-child(3){
+    margin: 0x 30px 0px 30px;
+    border-top: 1px solid gray;
+    padding: 30px 0px 0px;
+}
+
+.announcements>span{
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: "roboto",sans-serif;
+    color: rgb(25, 25, 25);
+}
+
+.announcements>p{
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: "roboto",sans-serif;
+    color: rgb(25, 25, 25);
+}
+
